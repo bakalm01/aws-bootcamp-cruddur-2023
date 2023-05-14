@@ -20,11 +20,11 @@ services:
       - ./backend-flask:/backend-flask
   frontend-react-js:
     environment:
-      REACT_AWS_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
-      REACT_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
+      REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
+      REACT_APP_AWS_PROJECT_REGION: "${AWS_DEFAULT_REGION}"
       REACT_APP_AWS_COGNITO_REGION: "${AWS_DEFAULT_REGION}"
-      REACT_APP_AWS_USER_POOLS_ID: "ca-central-1_F3HVzIEP1"
-      REACT_APP_CLIENT_ID: "1oimi8lg0e6io1r8m474cva6mo"
+      REACT_APP_AWS_USER_POOLS_ID: "ca-central-1_oJITYvzP6"
+      REACT_APP_CLIENT_ID: "10obmk7kueh1fuh4fijtef9b8r"
     build: ./frontend-react-js
     ports:
       - "3000:3000"
