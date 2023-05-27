@@ -60,4 +60,4 @@ class CreateActivity:
     sql = db.template('activities','object')
     return db.query_object_json(sql,{
       'uuid': uuid
-    })
+    }) 

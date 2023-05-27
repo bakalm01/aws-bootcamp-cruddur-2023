@@ -119,4 +119,4 @@ class Db:
     print ("pgerror:", err.pgerror)
     print ("pgcode:", err.pgcode, "\n")
 
-db = Db()
+db = Db() 
